@@ -143,12 +143,9 @@ nav {
   transition-duration: 0.15s;
   transition-timing-function: ease;
 }
-.contact-us-light:hover, .contact-us-light:focus {
+.contact-us-light:hover, .contact-us-light:focus, .contact-us-light:active {
   color: #568FE7;
   background-color: white;
-}
-.contact-us-light:active {
-  transform: translateY(4px);
 }
 
 /* -Dark- */
@@ -168,7 +165,7 @@ nav {
 .darknav li a:hover::after, .lightnav li a:focus::after, .lightnav li a:active::after {
   right: 0;
 }
-/* Contact Us (dark) */
+/* Contact Us */
 .contact-us-dark {
   margin-right: 32px;
 
@@ -183,23 +180,21 @@ nav {
   transition-duration: 0.15s;
   transition-timing-function: ease;
 }
-.contact-us-dark:hover, .contact-us-dark:focus {
+.contact-us-dark:hover, .contact-us-dark:focus, .contact-us-dark:active  {
   color: white;
   background-color: #5A678E;
 }
-.contact-us-dark:active {
-  transform: translateY(4px);
-}
+
 /* -Social media- */
 .sm img{
   display: inline-block;
   transition: transform 0.2s ease;
 }
 .sm img:hover, .sm img:focus {
-  transform: translateY(-4px);
+  transform: translateY(-2px);
 }
 .sm img:active {
-  transform: translateY(-2px);
+  transform: translateY(0px);
   transition-duration: 0s;
 }
 .yt {

@@ -3,62 +3,90 @@
 
 <html>
   <head>
+    <meta charset="utf-8">
     <title>FISDAC London</title>
     <link rel="stylesheet" type="text/css" href="style.css">
     <link rel="shortcut icon" href="assets/logo/favicon fill.ico" type="image/x-icon">
+    <meta name="viewport" content="initial-scale=1 , minimum-scale=1">
   </head>
 
   <body>
-    <!-- NAVIGATION BAR -->
+    <!-- === FULL === -->
+    <!-- navigation bar -->
     <nav>
-      <!-- Logo -->
-      <a href="index.html"><img src="assets/logo/logotype-dark.svg" alt="Logo" class="logotype-dark"></a>
+      <a href="index.html" alt="Logotype"><img src="assets/logo/logotype-dark.svg" id="logotype-dark"></a>
 
-      <ul class="nav-menu lightnav">
-
-        <!-- Navigation bar text -->
+      <ul class="navmenu lightnav">
         <li><a href="index.html">Home</a></li>
         <li><a href="calendar.html">Calendar</a></li>
         <li><a href="about.html">About</a></li>
         <li><a href="directions.html">Directions</a></li>
 
-        <!-- Contact us button -->
         <a href="contact.html" class="button contact-us-light">Contact Us</a>
 
-        <!-- Social media icons -->
-        <div class="sm">
-          <a href="https://www.youtube.com/channel/UCZbFXTMuBxKXKm8MaP0NlYA" target="_blank" class="yt">
-            <img src="assets/logo/yt light.svg" alt="YouTube">
-          </a>
-          <a href="https://www.instagram.com/fisdac/?hl=en" target="_blank" class="ig">
-            <img src="assets/logo/ig light.svg" alt="Instagram">
-          </a>
-          <a href="https://www.facebook.com/ficadventist" target="_blank" class="fb">
-            <img src="assets/logo/fb light.svg" alt="Facebook">
-          </a>
-        </div>
+        <a href="https://www.youtube.com/channel/UCZbFXTMuBxKXKm8MaP0NlYA" target="_blank" class="sm" id="yt">
+          <img src="assets/logo/yt light.svg" alt="YouTube">
+        </a>
+        <a href="https://www.instagram.com/fisdac/?hl=en" target="_blank" class="sm" id="ig">
+          <img src="assets/logo/ig light.svg" alt="Instagram">
+        </a>
+        <a href="https://www.facebook.com/ficadventist" target="_blank" class="sm" id="fb">
+          <img src="assets/logo/fb light.svg" alt="Facebook">
+        </a>
       </ul>
     </nav>
 
+
+    <!-- === MOBILE === -->
+    <!-- HEADER -->
+    <header class="banner-wrapper">
+      <div class="banner-content">
+        <a href="#" id="logotype-dark"><img src="assets/logo/logotype-dark.svg" alt="Logo"></a>
+        <a href="#" id="lightmenu-btn"><img src="assets/lightmenu.svg" alt="Menu"></a>
+      </div>
+    </header>
+
     <!-- CONTENT -->
-    <div class="home-block">
+    <div class="home-wrapper">
       <h1>A vibrant church in London</h1>
-      <p>
-          Welcome to the Filipino International Seventh-day Adventist Church.<br>
-          Join us in worship every Saturday morning at 11:40.
-      </p>
-      <div class="home-buttons">
-        <a href="https://www.youtube.com/channel/UCZbFXTMuBxKXKm8MaP0NlYA/videos?view=2&flow=grid" target="_blank" class="button stream"><img src="assets/home/play.svg" alt="Play button" class="playsvg">Watch Stream</a>
-        <a href="https://drive.google.com/drive/folders/1EbK4kqPKlklJSwrHNUYy-zWjgIz53-BJ?usp=sharing" target="_blank" class=" button programme">View Programme</a>
+      <h5 id="smallh5"> Welcome to the Filipino International Seventh-day Adventist Church. Join us in worship every Saturday morning at 11:40.</h5>
+      <h5 id="largeh5">
+        Welcome to the Filipino International Seventh-day Adventist Church.<br>
+        Join us in worship every Saturday morning at 11:40.
+      </h5>
+
+      <div id="church-image-375"><img src="assets/home/church.svg"></div>
+
+      <div class="button-wrapper">
+        <a href="https://www.youtube.com/channel/UCZbFXTMuBxKXKm8MaP0NlYA/videos?view=2&flow=grid" target="_blank" class="button" id="stream"><img src="assets/home/play.svg" alt="Play button" id="playsvg">Watch Stream</a>
+        <a href="https://drive.google.com/drive/folders/1EbK4kqPKlklJSwrHNUYy-zWjgIz53-BJ?usp=sharing" target="_blank" class="button" id="programme">View Programme</a>
       </div>
     </div>
-    <div class="bg church"></div>
 
-    <!-- BACKGROUND -->
-    <div class="bg gradient"></div>
-    <img src="assets/rectangles/rec1.svg" class="bg rec1-home">
-    <img src="assets/rectangles/rec6.svg" class="bg rec6-home">
-    <img src="assets/rectangles/rec11.svg" class="bg rec11-home">
-    <img src="assets/rectangles/rec5.svg" class="bg rec5-home">
+    <!-- 375px background -->
+    <div class="bg" id="gradient-mobile"><img src="assets/home/gradient mobile.svg"></div>
+    <img src="assets/home/rectangles/375/rec1.svg" class="bg" id="homerec1-375">
+    <img src="assets/home/rectangles/375/rec2.svg" class="bg" id="homerec2-375">
+    <img src="assets/home/rectangles/375/rec3.svg" class="bg" id="homerec3-375">
+
+    <!--- 768px background -->
+    <div id="church-image"><img src="assets/home/church.svg"></div>
+    <div class="bg" id="gradient-tablet"><img src="assets/home/gradient tablet.svg"></div>
+    <img src="assets/home/rectangles/768/rec1.svg" class="bg" id="homerec1-768">
+    <img src="assets/home/rectangles/768/rec2.svg" class="bg" id="homerec2-768">
+    <img src="assets/home/rectangles/768/rec3.svg" class="bg" id="homerec3-768">
+    <img src="assets/home/rectangles/768/rec4.svg" class="bg" id="homerec4-768">
+
+    <!-- 1024px background -->
+    <img src="assets/home/rectangles/1024/rec1.svg" class="bg" id="homerec1-1024">
+
+    <!--- 1440px background -->
+    <div class="bg" id="gradient-full"><img src="assets/home/gradient full.svg"></div>
+    <img src="assets/home/rectangles/1440/rec1.svg" class="bg" id="homerec1-1440">
+    <img src="assets/home/rectangles/1440/rec2.svg" class="bg" id="homerec2-1440">
+    <img src="assets/home/rectangles/1440/rec3.svg" class="bg" id="homerec3-1440">
+    <img src="assets/home/rectangles/1440/rec4.svg" class="bg" id="homerec4-1440">
+
+
   </body>
 </html>

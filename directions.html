@@ -3,89 +3,118 @@
 
 <html>
   <head>
+    <meta charset="utf-8">
     <title>Directions</title>
     <link rel="stylesheet" type="text/css" href="style.css">
     <link rel="shortcut icon" href="assets/logo/favicon fill.ico" type="image/x-icon">
+    <meta name="viewport" content="initial-scale=1 , minimum-scale=1">
   </head>
 
   <body>
-    <!-- NAVIGATION BAR -->
-    <nav>
-      <!-- Logo -->
-      <div class="nav-left">
-        <a href="index.html"><img src="assets/logo/logotype-dark.svg" alt="Logo" class="logotype-dark"></a>
-      </div>
+    <!-- === FULL === -->
+    <!-- navigation bar -->
+    <nav lightnav>
+      <a href="index.html" alt="Logotype"><img src="assets/logo/logotype-dark.svg" id="logotype-dark"></a>
 
-      <div class="nav-right">
-        <ul class="nav-menu darknav">
-          <!-- Navigation bar text -->
-          <li><a href="index.html">Home</a></li>
-          <li><a href="calendar.html">Calendar</a></li>
-          <li><a href="about.html">About</a></li>
-          <li><a href="directions.html">Directions</a></li>
+      <ul class="navmenu darknav">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="calendar.html">Calendar</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="directions.html">Directions</a></li>
 
-          <!-- Contact us button -->
-          <a href="contact.html" class="button contact-us-dark">Contact Us</a>
+        <a href="contact.html" class="button contact-us-dark">Contact Us</a>
 
-          <!-- Social media icons -->
-          <div class="sm">
-            <a href="https://www.youtube.com/channel/UCZbFXTMuBxKXKm8MaP0NlYA" target="_blank" class="yt">
-              <img src="assets/logo/yt dark.svg" alt="YouTube">
-            </a>
-            <a href="https://www.instagram.com/fisdac/?hl=en" target="_blank" class="ig">
-              <img src="assets/logo/ig dark.svg" alt="Instagram">
-            </a>
-            <a href="https://www.facebook.com/ficadventist" target="_blank" class="fb">
-              <img src="assets/logo/fb dark.svg" alt="Facebook">
-            </a>
-          </div>
-        </ul>
-      </div>
+        <a href="https://www.youtube.com/channel/UCZbFXTMuBxKXKm8MaP0NlYA" target="_blank" class="sm" id="yt">
+          <img src="assets/logo/yt dark.svg" alt="YouTube">
+        </a>
+        <a href="https://www.instagram.com/fisdac/?hl=en" target="_blank" class="sm" id="ig">
+          <img src="assets/logo/ig dark.svg" alt="Instagram">
+        </a>
+        <a href="https://www.facebook.com/ficadventist" target="_blank" class="sm" id="fb">
+          <img src="assets/logo/fb dark.svg" alt="Facebook">
+        </a>
+      </ul>
     </nav>
 
+
+    <!-- === MOBILE === -->
+    <!-- HEADER -->
+    <header class="banner-wrapper">
+      <div class="banner-content">
+        <a href="index.html" id="logotype-dark"><img src="assets/logo/logotype-dark.svg" alt="Logo"></a>
+        <a href="#" id="darkmenu-btn"><img src="assets/darkmenu.svg" alt="Menu"></a>
+      </div>
+    </header>
+
     <!-- CONTENT -->
-    <div class="direction-content">
-      <div class="directions">
+    <div class="directions-wrapper">
+      <div class="directions-title">
         <h1>Come and visit us</h1>
-        <p>Every Saturday we open our doors to everyone. We occasionally hold community events on Sundays and prayer meetings on Friday and Wednesday evenings.</p>
-        <div class="travellers"></div>
+        <h2>Come and visit us</h2>
+        <h5>Every Saturday we open our doors to everyone. We occasionally hold community events on Sundays and prayer meetings on Friday and Wednesday evenings.</h5>
+        <img src="assets/directions/travellers.png">
       </div>
 
-      <div class="info-cards">
-        <a href="https://goo.gl/maps/LUTmVwESChCozSxT7" target="_blank">
-          <div class="address">
-            <div id="addressclick"><h3>Address</h3><p>click for Google Maps</p></div>
-            <p>Filipino International Seventh-day Adventist church
-              <br>Brentmead Gardens
-              <br>West Twyford
-              <br>London
-              <br>NW10 7ED
-            </p>
+      <!-- direction cards -->
+      <div class="directions-cards-wrapper">
+        <div class="directions-cards">
+          <a href="https://goo.gl/maps/LUTmVwESChCozSxT7" target="_blank">
+            <div class="address">
+              <div class="address-click">
+                <h5>Address</h5><h6>click for Google Maps</h6>
+              </div>
+              <h6 class="directions-text">
+                Filipino International Seventh-day Adventist Church<br>
+                Brentmead Gardens<br>
+                West Twyford<br>
+                London<br>
+                NW10 7ED
+              </h6>
+            </div>
+          </a>
+
+          <div class="tube">
+            <h5>Tube Stations</h5>
+            <h6 class="directions-text">
+              <span style="font-weight: 500">Hanger Lane</span> <span style="color: #E32017">(Central Line)</span> <i>≈ 10 minute walk</i><br>
+              <span style="font-weight: 500">Park Royal</span>  <span style="color: #003688">(Piccadilly Line)</span> <i>≈ 20 minute walk</i>
+            </h6>
           </div>
-        </a>
-        <div class="tube">
-          <h3>Tube Stations</h3>
-          <ul>
-            <li><span style="font-weight: 500">Hanger Lane</span> <span style="color: #E32017">(Central Line)</span> <i>≈ 10 minute walk</i></li>
-            <li><span style="font-weight: 500">Park Royal</span>  <span style="color: #003688">(Piccadilly Line)</span> <i>≈ 20 minute walk</i></li>
-          </ul>
-        </div>
-        <div class="bus">
-          <h3>Bus Stops</h3>
-          <ul>
-            <li>No. 224 to Willesden Junction:  <span style="font-weight: 500">Brentmead Gardens (via Harlesden)</span></li>
-            <li>No. 112 to Brent Cross: <span style="font-weight: 500">Brentmead Gardens Stop (along A406)</span></li>
-            <li>No. 224 to Willesden Junction: <span style="font-weight: 500">Twyford Abbey Road Stop</span</li>
-          </ul>
+
+          <div class="bus">
+            <h5>Bus Stops</h5>
+            <h6 class="directions-text">
+              No. 224 to Willesden Junction:  <span style="font-weight: 500">Brentmead Gardens (via Harlesden)</span><br>
+              No. 112 to Brent Cross: <span style="font-weight: 500">Brentmead Gardens Stop (along A406)</span><br>
+              No. 224 to Willesden Junction: <span style="font-weight: 500">Twyford Abbey Road Stop</span>
+            </h6>
+          </div>
         </div>
       </div>
     </div>
 
-    <!-- BACKGROUND -->
-    <img src="assets/rectangles/rec9.svg" class="bg rec9-directions">
-    <img src="assets/rectangles/rec4.svg" class="bg rec4-directions">
-    <img src="assets/rectangles/rec7.svg" class="bg rec7-directions">
-    <img src="assets/rectangles/rec10.svg" class="bg rec10-directions">
-    <img src="assets/rectangles/rec3.svg" class="bg rec3-directions">
+    <!-- 375px background -->
+    <img src="assets/directions/rectangles/375/rec1.svg" class="bg" id="directionsrec1-375">
+    <img src="assets/directions/rectangles/375/rec2.svg" class="bg" id="directionsrec2-375">
+    <img src="assets/directions/rectangles/375/rec3.svg" class="bg" id="directionsrec3-375">
+
+    <!--- 768px background -->
+    <img src="assets/directions/rectangles/768/rec1.svg" class="bg" id="directionsrec1-768">
+    <img src="assets/directions/rectangles/768/rec2.svg" class="bg" id="directionsrec2-768">
+    <img src="assets/directions/rectangles/768/rec3.svg" class="bg" id="directionsrec3-768">
+
+    <!--- 1024px background -->
+    <img src="assets/directions/rectangles/1024/rec1.svg" class="bg" id="directionsrec1-1024">
+    <img src="assets/directions/rectangles/1024/rec2.svg" class="bg" id="directionsrec2-1024">
+    <img src="assets/directions/rectangles/1024/rec3.svg" class="bg" id="directionsrec3-1024">
+    <img src="assets/directions/rectangles/1024/rec4.svg" class="bg" id="directionsrec4-1024">
+
+    <!--- 1440px background -->
+    <img src="assets/directions/rectangles/1440/rec1.svg" class="bg" id="directionsrec1-1440">
+    <img src="assets/directions/rectangles/1440/rec2.svg" class="bg" id="directionsrec2-1440">
+    <img src="assets/directions/rectangles/1440/rec3.svg" class="bg" id="directionsrec3-1440">
+    <img src="assets/directions/rectangles/1440/rec4.svg" class="bg" id="directionsrec4-1440">
+    <img src="assets/directions/rectangles/1440/rec5.svg" class="bg" id="directionsrec5-1440">
+
   </body>
-<html>
+</html>
